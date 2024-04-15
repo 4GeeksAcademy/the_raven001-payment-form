@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container-fluid justify-content-center" style="padding: 2%; width: 77%; height: 80%;">
+        <div class="card">
+            <div class="card-header pt-10">
+              <h1>Payment form example</h1>
+            </div>
+
+            <!--Body-->
+
+            <div class="card-body">
+              <div class="bg-danger ps-3 p-2 text-danger bg-opacity-25 rounded">
+                Some fields are missing
+              </div>
+
+              <form class="card-info pt-3">
+                <div>
+
+
+                  <div class="input-group mb-3">
+
+                    <div class="pe-3">
+                      <p class="fw-bold mb-0">Card #</p>
+                      <input type="number" style="width: 500px;" class="form-control me-2" placeholder="XXXXXXXXXXXXXXXX" aria-label="CC" size="16">
+                    </div>
+                    
+                    <div class="pe-3">
+                      <p class="fw-bold mb-0">CVC #</p>
+                      <input type="number" class="form-control me-2" placeholder="0000" aria-label="CVC" size="4">
+                    </div>
+
+                    <div class="pe-3">
+                      <p class="fw-bold mb-0"> Amount</p>
+                      <div class="d-flex">
+                        <i class="fa-solid fa-dollar-sign pt-1" style="color: #000000;"></i>
+                        <input type="number" style="width:300px;" class="form-control me-2" placeholder="Amount" aria-label="Amount">
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                  
+
+                  <div class="input-group mb-3">
+
+                    <div class="pe-3">
+                      <p class="fw-bold mb-0">First Name</p>
+                      <input type="text" style="width: 500px;" class="form-control me-2" aria-label="CC" size="16">
+                    </div>
+                    
+                    <div class="pe-3">
+                      <p class="fw-bold mb-0">Last Name</p>
+                      <input type="text" style="width: 540px;" class="form-control me-2" aria-label="CVC" size="4">
+                    </div>
+
+
+                    <div class="input-group mt-3">
+
+                      <div class="pe-3">
+                        <p class="fw-bold mb-0">City</p>
+                        <input type="text" style="width: 500px;" class="form-control me-2" aria-label="City" size="16">
+                      </div>
+                      
+                      <div class="pe-3">
+                        <p class="fw-bold mb-0">State</p>
+                        <input type="text" style="width:205px;" class="form-control" placeholder="Pick a state" aria-label="State" size="4">
+                      </div>
+  
+                      <div class="pe-2">
+                        <p class="fw-bold mb-0">Postal Code</p>
+                        <div class="d-flex">
+                          <input type="number" style="width:320px;" class="form-control" aria-label="Amount">
+                        </div>
+                      </div>
+                       
+                  </div>
+
+                  <div class="d-flex">
+                    <!--Type of CCs-->
+                    <div>
+                      <p class="fw-bold mt-2 m-0">
+                        We accept:
+                      </p>
+                      <div class="cards bg-dark m-2 p-2 rounded">
+                        <input type="radio" name="type-cc"/>
+                        <i class="fa-brands fa-cc-visa" style="color: #ffffff;"></i>
+                        <input type="radio" name="type-cc"/>
+                        <i class="fa-brands fa-cc-mastercard" style="color: #ffffff;"></i>
+                        <input type="radio" name="type-cc"/>
+                        <i class="fa-brands fa-cc-diners-club" style="color: #ffffff;"></i>
+                        <input type="radio" name="type-cc"/>
+                        <i class="fa-brands fa-cc-discover" style="color: #ffffff;"></i>
+                      </div>
+                    </div>
+
+
+                    <div style="width: 335px;"></div>
+                    <!-- Message box -->
+
+                    <div>
+                      <p class="fw-bold mt-2 m-0">
+                        Message
+                      </p>
+
+                      <textarea class="form-control" style="width: 545px; height: 100px;"></textarea>
+                      <p calss="text-body-tertiary">
+                        Add any notes here.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+                <div></div>
+                <div></div>
+
+              </form>
+            </div>
+
+            <!--Footer-->
+            <div class="card-footer text-muted">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                <button class="btn btn-primary" type="button">Send</button>
+              </div>
+            </div>
+          </div>
+            
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2b76cfaf6b.js" crossorigin="anonymous"></script>
+</body>
+</html>
