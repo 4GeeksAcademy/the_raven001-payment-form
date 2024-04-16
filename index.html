@@ -9,39 +9,43 @@
 </head>
 <body>
     <div class="container-fluid justify-content-center" style="padding: 2%; width: 77%; height: 80%;">
-        <div class="card">
+        
+      
+      <div class="card">
             <div class="card-header pt-10">
               <h1>Payment form example</h1>
             </div>
 
             <!--Body-->
-
-            <div class="card-body">
-              <div class="bg-danger ps-3 p-2 text-danger bg-opacity-25 rounded">
-                Some fields are missing
+            <div class="container mt-3">
+            <div class="row">
+              <div class="col-12">
+                <div class="alert alert-danger" role="alert">
+                  Some fields are missing
+                </div>
               </div>
 
-              <form class="card-info pt-3">
+              <form class="card-info">
                 <div>
 
 
-                  <div class="input-group mb-3">
+                  <div class="row input-group mb-3">
 
-                    <div class="pe-3">
+                    <div class="col-5">
                       <p class="fw-bold mb-0">Card #</p>
-                      <input type="number" style="width: 500px;" class="form-control me-2" placeholder="XXXXXXXXXXXXXXXX" aria-label="CC" size="16">
+                      <input type="number"  class="form-control me-2" placeholder="XXXXXXXXXXXXXXXX" aria-label="CC" size="16">
                     </div>
                     
-                    <div class="pe-3">
+                    <div class="col-3">
                       <p class="fw-bold mb-0">CVC #</p>
                       <input type="number" class="form-control me-2" placeholder="0000" aria-label="CVC" size="4">
                     </div>
 
-                    <div class="pe-3">
+                    <div class="col-4">
                       <p class="fw-bold mb-0"> Amount</p>
                       <div class="d-flex">
                         <i class="fa-solid fa-dollar-sign pt-1" style="color: #000000;"></i>
-                        <input type="number" style="width:300px;" class="form-control me-2" placeholder="Amount" aria-label="Amount">
+                        <input type="number" class="form-control me-2" placeholder="Amount" aria-label="Amount">
                       </div>
                     </div>
                     
@@ -49,44 +53,53 @@
                   </div>
                   
 
-                  <div class="input-group mb-3">
+                  <div class="row input-group mb-3">
 
-                    <div class="pe-3">
-                      <p class="fw-bold mb-0">First Name</p>
-                      <input type="text" style="width: 500px;" class="form-control me-2" aria-label="CC" size="16">
-                    </div>
-                    
-                    <div class="pe-3">
-                      <p class="fw-bold mb-0">Last Name</p>
-                      <input type="text" style="width: 540px;" class="form-control me-2" aria-label="CVC" size="4">
-                    </div>
-
-
-                    <div class="input-group mt-3">
-
-                      <div class="pe-3">
-                        <p class="fw-bold mb-0">City</p>
-                        <input type="text" style="width: 500px;" class="form-control me-2" aria-label="City" size="16">
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="fw-bold mb-0">First Name</p>
+                        <input type="text" class="form-control mb-3" aria-label="CC">
                       </div>
                       
-                      <div class="pe-3">
+                      <div class="col-6">
+                        <p class="fw-bold mb-0">Last Name</p>
+                        <input type="text" class="form-control mb-3" aria-label="CVC">
+                      </div>
+                    </div>
+
+                    
+
+
+                    <div class="row input-group">
+
+                      <div class="col-6">
+                        <p class="fw-bold mb-0">City</p>
+                        <input type="text"  class="form-control mb-3" aria-label="City" size="16">
+                      </div>
+                      
+                      <div class="col-3">
                         <p class="fw-bold mb-0">State</p>
-                        <input type="text" style="width:205px;" class="form-control" placeholder="Pick a state" aria-label="State" size="4">
+                        <select type="text" class="form-select" placeholder="Pick a state" aria-label="Default select example">
+                          <option selected>Pick a state</option>
+                          <option value="1">State I</option>
+                          <option value="2">State II</option>
+                          <option value="3">State III</option>
+                        </select>
                       </div>
   
-                      <div class="pe-2">
+                      <div class="col-3">
                         <p class="fw-bold mb-0">Postal Code</p>
-                        <div class="d-flex">
-                          <input type="number" style="width:320px;" class="form-control" aria-label="Amount">
+                        <div>
+                          <input type="number" class="form-control" aria-label="Amount">
                         </div>
                       </div>
                        
                   </div>
 
-                  <div class="d-flex">
+                  <div class="row">
                     <!--Type of CCs-->
-                    <div>
-                      <p class="fw-bold mt-2 m-0">
+                    <div class="col-3">
+                      <p class="fw-bold m-0">
                         We accept:
                       </p>
                       <div class="cards bg-dark m-2 p-2 rounded">
@@ -102,16 +115,16 @@
                     </div>
 
 
-                    <div style="width: 335px;"></div>
+                    <div class="col-3"></div>
                     <!-- Message box -->
 
-                    <div>
-                      <p class="fw-bold mt-2 m-0">
+                    <div class="col-6">
+                      <p class="mb-0 fw-bold">
                         Message
                       </p>
 
-                      <textarea class="form-control" style="width: 545px; height: 100px;"></textarea>
-                      <p calss="text-body-tertiary">
+                      <textarea class="form-control" rows="5"></textarea>
+                      <p class="text-body-tertiary">
                         Add any notes here.
                       </p>
                     </div>
@@ -125,14 +138,18 @@
             </div>
 
             <!--Footer-->
-            <div class="card-footer text-muted">
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
-                <button class="btn btn-primary" type="button">Send</button>
-              </div>
-            </div>
-          </div>
             
+
+              
+            </div>
+            
+        </div> 
+        <div class="card-footer text-muted">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+            <button class="btn btn-primary" type="button">Send</button>
+        </div>
+      </div>
     </div>
     
 
